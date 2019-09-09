@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Securing Digital</title>
+    <title>Pffledge4Pledge</title>
     <meta name="description" content="We build and deliver information security platform and services to pro actively secure, continuously monitor and reactively respond to cyber threats.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,6 +49,12 @@
             width: 70px;
             margin-left: 50px;
             margin-top: -15px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .mobview {
+                margin-top: 40px;
+            }
         }
     </style>
 </head>
@@ -106,7 +112,7 @@
             <!-- - -->
             <span class="bubble bubble--01" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"></span>
             <div class="container">
-                <div class="row">
+                <div class="row mobview">
 
                     <div class="info-content wow fadeInUp col-sm-6 header__contentto" data-wow-delay="0.5s">
                         <h1 class="section__title" style="font-size:30px" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-delay="100">
@@ -169,7 +175,7 @@
                             <!-- <h1 class="section__title" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-delay="100">
                                 <strong>DA.com</strong> <br>
                             </h1> -->
-                            <a href="http://doctorsattending.com/" target="blank"><img class="da_img" src="button1.png" style="    width: 250px;
+                            <a href="http://doctorsattending.com/" target="blank" style="margin-left:-40px"><img class="da_img" src="button1.png" style="    width: 250px;
                                 height: 90px;"></a>
                         </div>
                         <br>
@@ -391,7 +397,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:3000/contactform",
+                    url: "https://p4pledge.herokuapp.com/contactform",
                     data: obj,
                     dataType: 'json',
                     headers: {
